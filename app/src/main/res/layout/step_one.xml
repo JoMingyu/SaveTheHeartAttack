@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|top"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText"
+        android:text="먼저, 마음을 안정시키세요."
+        android:textSize="28dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#602FC3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contextT"
+        android:layout_below="@id/titleText"
+        android:textSize="22sp"
+        android:textColor="#339999"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:text="환자의 상태가 어떤가요?\n\n1. 환자의 어깨를 두드려보세요.\n환자의 의식이 없나요?\n\n2. 환자의 손목이나 목 뒤를 짚어서\n맥박을 확인해보세요.\n환자의 맥박이 뛰지 않나요?\n\n이 중 하나라도 해당된다면, \n다음으로 넘어가세요!"/>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="95dp"
+        android:id="@+id/gotoTwo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="NEXT"
+        android:backgroundTint="#D4FF1030"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

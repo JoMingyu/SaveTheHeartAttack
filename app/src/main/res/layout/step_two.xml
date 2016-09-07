@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left|top"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText2"
+        android:text="주변에 이 사실을 알리세요!"
+        android:textSize="28dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#602FC3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contextT2"
+        android:layout_below="@id/titleText2"
+        android:textSize="22sp"
+        android:textColor="#339999"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:text="주변에 있는 사람들에게 외치세요.\n\n\'자동제세동기 좀 가져다주세요!\'\n\'심폐소생술 할 줄 아시는 분, \n도와주세요!\'\n\n이제, 아래 버튼을 누르고\n영상의 지시에 따라 심폐 소생술을 \n실시해 보세요."/>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="CPR 영상"
+        android:backgroundTint="#D4FF1030"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/gotoMov"/>
+</RelativeLayout>
