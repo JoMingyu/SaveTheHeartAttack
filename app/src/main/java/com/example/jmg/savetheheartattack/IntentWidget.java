@@ -12,8 +12,7 @@ import android.widget.RemoteViews;
  */
 public class IntentWidget extends AppWidgetProvider {
 
-    static void updateAppWidget(Context context, AppWidgetManager appWidgetManager,
-                                int appWidgetId) {
+    static void updateAppWidget(Context context, AppWidgetManager appWidgetManager, int appWidgetId) {
 
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.intent_widget);
         // views.setTextViewText(R.id.appwidget_text, widgetText);

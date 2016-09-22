@@ -22,10 +22,11 @@ public class StepTwo extends Activity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.step_two);
-        gotoNext2 = (Button)findViewById(R.id.gotoMov);
 
+        gotoNext2 = (Button)findViewById(R.id.gotoMov);
         titleText2 = (TextView)findViewById(R.id.titleText2);
         contextT2 = (TextView)findViewById(R.id.contextT2);
+
         Typeface typeface = Typeface.createFromAsset(getAssets(), "font/amim.ttf");
         titleText2.setTypeface(typeface);
         contextT2.setTypeface(typeface);

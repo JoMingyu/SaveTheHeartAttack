@@ -38,12 +38,12 @@ public class Main extends AppCompatActivity {
     private void areYouReal() {
         AlertDialog.Builder alt_bld = new AlertDialog.Builder(this);
 
-        alt_bld.setMessage("119로 현재 위치 정보가 전송됩니다.").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        alt_bld.setMessage("119로 현재 위치 정보가 전송되며, 스마트폰에선 최대 볼륨으로 사이렌이 울립니다.").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // Action for 'YES' Button
                 progress.setVisibility(progress.VISIBLE);
                 if(currentLocation != null) {
-                    sendSMS("01027640415", "" + findAddress(currentLocation.getLatitude(), currentLocation.getLongitude()) + "\n\n빠른 출동 부탁드립니다.");
+                    sendSMS("01055758534", "" + findAddress(currentLocation.getLatitude(), currentLocation.getLongitude()) + "\n\n빠른 출동 부탁드립니다.");
                     Intent intent = new Intent(getApplicationContext(), StepOne.class); // stepOne 클래스로 인텐트
                     progress.setVisibility(progress.GONE);
                     startActivity(intent);
@@ -57,10 +57,9 @@ public class Main extends AppCompatActivity {
         }); // setNegativeButton
 
         AlertDialog alert = alt_bld.create();
-        // Title for AlertDialog
-        alert.setTitle("정말로 신고하시겠습니까?");
-        // Icon for AlertDialog
-        alert.setIcon(R.drawable.warning);
+
+        alert.setTitle("정말로 신고하시겠습니까?"); // Title for AlertDialog
+        alert.setIcon(R.drawable.warning);          // Icon for AlertDialog
         alert.show();
     } // areYouReal
 

@@ -19,7 +19,7 @@ public class CPRMovie extends Activity {
         Uri video = Uri.parse("android.resource://" + getPackageName() + "/raw/vdvd");
         videoview = (VideoView)findViewById(R.id.videoview);
         videoview.setVideoURI(video);
-        //videoview.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.vddd));
+        // videoview.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.vddd));
         // videoview.setVideoPath(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video_file));
 
         final MediaController mc = new MediaController(CPRMovie.this);
@@ -32,5 +32,4 @@ public class CPRMovie extends Activity {
         }, 100);
         videoview.start();
     }
-
 }

@@ -23,8 +23,9 @@
         android:textSize="22sp"
         android:textColor="#339999"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="25dp"
-        android:text="주변에 있는 사람들에게 외치세요.\n\n\'자동제세동기 좀 가져다주세요!\'\n\'심폐소생술 할 줄 아시는 분, \n도와주세요!\'\n\n이제, 아래 버튼을 누르고\n영상의 지시에 따라 심폐 소생술을 \n실시해 보세요."/>
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="주변에 있는 사람들에게 외치세요.\n\n\'자동제세동기 좀 가져다주세요!\'\n\n이제, 아래 버튼을 누르고\n영상의 지시에 따라 심폐 소생술을 \n실시하세요.\n\n인공호흡은 오히려 생존률을 낮춥니다.\n흉부압박만 실시하세요."/>
 
     <Button
         android:layout_width="280dp"

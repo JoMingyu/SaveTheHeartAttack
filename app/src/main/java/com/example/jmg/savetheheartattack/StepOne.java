@@ -34,6 +34,7 @@ public class StepOne extends Activity {
 
         titleText = (TextView)findViewById(R.id.titleText);
         contextT = (TextView)findViewById(R.id.contextT);
+
         Typeface typeface = Typeface.createFromAsset(getAssets(), "font/amim.ttf");
         titleText.setTypeface(typeface);
         contextT.setTypeface(typeface);
